@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const readmeTamplate = require('../src/readmeTamplate');
+const generateMarkdown = require('./Develop/utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -143,34 +143,54 @@ const questions = [
 // TODO: Create a function to write README file
 
  
-function writeToFile(fileName, data) {
-//Steps
-// take user's input and pass it to readmeTamplate()
-const userData = readmeTamplate(data);
-// readmeTamplate comes back as String
-// need to save sting in a file
-fs.writeFile( userData, (error) =>{
-    if (error){
-        console.log(error)
-    }
-} )
+const writeToFile = data => {
+    return new Promise((resolve, reject) => {
+        // make a readme file and add to dist folder
+        fs.writeFile('./dist/README.md', data, err => {
+            // if error, reject the Promise and send the error to .catch() method
+            if (err) {
+                reject (err);
+                // return out of the function here to make sure the Promise doesn't continut to execute the resolve() function
+                return;
+            }
+            // if everything went well, send the successful message
+            resolve({
+                ok: true,
+                message: console.log('Success! Navigate to the "dist" folder to see your README!')
+            });
+        })
+    })
 };
 
 // TODO: Create a function to initialize app
-function init() {
-    inquirer
-  .prompt(questions)
-  .then((answers) => {
-    writeToFile("readME.md", answers )
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
+// function init() {
+//     inquirer
+//   .prompt(questions)
+//   .then((answers) => {
+//     writeToFile("readME.md", answers )
+//   })
+//   .catch((error) => {
+//     if (error.isTtyError) {
+//       // Prompt couldn't be rendered in the current environment
+//     } else {
+//       // Something else went wrong
+//     }
+//   });
+// }
+
+const init = () => {
+    return inquirer.prompt(questions);
 }
 
 // Function call to initialize app
-init();
+init()
+.then(userInput => {
+    return generateMarkdown(userInput);
+})
+.then(readmeInfo => {
+    return writeToFile(readmeInfo);
+})
+.catch(err => {
+    console.log(err);
+})
+

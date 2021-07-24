@@ -1,4 +1,6 @@
-# Weather App
+# uhgeuiodjsvhndifuhu
+
+  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
   ## Table of Contents
   * [Description](#description)
@@ -9,26 +11,26 @@
   * [Licenses](#licenses)
   
   ## Description
-  undefined
+  eryvhriucofij
   
   ## Installation
-  just colone repository and add API key
+  yfhreuvnefd
   
   ## Usage
-  Enter the city name and click serch!
+  yhriuejciwqkdnrd
 
   ## Licenses
-    This project is covered under the GPL license. Click to learn more.
+    This project is covered under the MIT license. Click on button on top to learn more about license
   
   ## Contributing
-  ---
+  yhriuehiujoijmconev
   
   ## Tests
-  undefined
+  iurhviuwvhninbviuhewu
 
   ## Questions
   Have questions about this project?  
-  GitHub: https://github.com/smolyakova30  
-  Email: o.smol@gmail.com
+  GitHub: https://github.com/ghg  
+  Email: gtujgoijr@gvug
 
 

@@ -31,13 +31,15 @@ function renderLicenseSection(license) {
     return ``;
   } else {
     return `## Licenses
-    This project is covered under the ${license} license. Click to learn more.`
+    This project is covered under the ${license} license. Click on button on top to learn more about license`
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${renderLicenseBadge(data.licenses)}
 
   ## Table of Contents
   * [Description](#description)
@@ -65,10 +67,9 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  Have questions about this project?  
+  Have questions about this project? Feel free to send me an email! 
   GitHub: https://github.com/${data.github}  
   Email: ${data.email}
-
 
 `;
 }

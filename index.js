@@ -107,7 +107,7 @@ const questions = [
     {
         type: 'input',
         name: 'tests',
-        message: `Which kind of test do you have fpr yor apllication?`,
+        message: `Which kind of test do you have for yor apllication?`,
         validate: testsInput => {
             if (testsInput){
                 return true;
@@ -156,28 +156,13 @@ const writeToFile = data => {
             // if everything went well, send the successful message
             resolve({
                 ok: true,
-                message: console.log('Success! Navigate to the "dist" folder to see your README!')
+                message: console.log('Success! Now you can check "dist" folder to see your professional README!')
             });
         })
     })
 };
 
 // TODO: Create a function to initialize app
-// function init() {
-//     inquirer
-//   .prompt(questions)
-//   .then((answers) => {
-//     writeToFile("readME.md", answers )
-//   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//       // Prompt couldn't be rendered in the current environment
-//     } else {
-//       // Something else went wrong
-//     }
-//   });
-// }
-
 const init = () => {
     return inquirer.prompt(questions);
 }

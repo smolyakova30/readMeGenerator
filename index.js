@@ -50,10 +50,10 @@ const questions = [
 
     {
         type: 'input',
-        name: 'discription',
+        name: 'description',
         message: `Provide your project discription:`,
-        validate: discriptionInput => {
-            if (discriptionInput){
+        validate: descriptionInput => {
+            if (descriptionInput){
                 return true;
             }else{
                 console.log(`It is good to have some description of your project in README file!`);
@@ -106,10 +106,10 @@ const questions = [
 
     {
         type: 'input',
-        name: 'test',
+        name: 'tests',
         message: `Which kind of test do you have fpr yor apllication?`,
-        validate: testInput => {
-            if (testInput){
+        validate: testsInput => {
+            if (testsInput){
                 return true;
             }else{
                 console.log(`Please, provide nformation about tests and how to use them!`);

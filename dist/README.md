@@ -1,6 +1,6 @@
-# uhgeuiodjsvhndifuhu
+# Professional README Generator
 
-  [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+  
 
   ## Table of Contents
   * [Description](#description)
@@ -11,26 +11,24 @@
   * [Licenses](#licenses)
   
   ## Description
-  eryvhriucofij
+  My project is a README generator. The project will help a user generate a README without having to worry about applying proper mark down syntax.
   
   ## Installation
-  yfhreuvnefd
+  Before attempting to use this project, make sure to have these programs installed on your computer:
   
   ## Usage
-  yhriuejciwqkdnrd
+  Once software is downloaded and Node packages are initialized, it's time to get started!
 
-  ## Licenses
-    This project is covered under the MIT license. Click on button on top to learn more about license
+  
   
   ## Contributing
-  yhriuehiujoijmconev
+  If you see some issues, please, send me email
   
   ## Tests
-  iurhviuwvhninbviuhewu
+  To test this app, open up the file in VS Code. Open the terminal, change directory into the root folder ‘challenge-9-professional-README-generator’, and run ‘node index.js’. Answer the prompts and view the preview of the ‘generated-README.md’ file in the ‘dist’ folder.
 
   ## Questions
-  Have questions about this project?  
-  GitHub: https://github.com/ghg  
-  Email: gtujgoijr@gvug
-
+  Have questions about this project? Feel free to send me an email! 
+  GitHub: https://github.com/smolyakova30  
+  Email: o.smolyakova30@gmail.com
 
